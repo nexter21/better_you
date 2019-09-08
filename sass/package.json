@@ -1,0 +1,17 @@
+{
+  "name": "css-pre-compiler-scss-layout-for-easy-dev-env",
+  "version": "1.0.0",
+  "description": "A dev set up for Sass(Scss) for an easy dev env",
+  "main": "index.js",
+  "scripts": {
+    "watch:compile": "node-sass sass/main.scss ../public/css/main.css -w",
+    "start-server": "live-server",
+    "start": "npm-run-all --parallel start-server watch:compile"
+  },
+  "author": "Paras Kc (nexter21)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
